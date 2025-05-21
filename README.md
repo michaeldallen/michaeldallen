@@ -1,3 +1,5 @@
+# `michaeldallen`
+
 <!--ts-->
 * [actions](#actions)
    * [github-markdown-toc](#github-markdown-toc)
@@ -5,9 +7,10 @@
 <!--te-->
 
 
-# actions
+## actions
+<ul>
 
-## `github-markdown-toc`
+### `github-markdown-toc`
 
 I am maintaining the table of contents for this page with [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc.git)
 
@@ -16,16 +19,19 @@ Thank you:
 <ul>
 
 [@ekalinin](https://github.com/ekalinin) for [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
-
+<br>
 [@stefanzweifel](https://github.com/stefanzweifel) for [git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action)
-
+<br>
 [@Michael Heap](https://michaelheap.com/) for the [nice writeup on `git-auto-commit`](https://michaelheap.com/git-auto-commit/)
+</ul>
+
+</ul>
 
 
+## mermaid
 
-# mermaid
+<ul>
 
-adfadfas
 
 ```mermaid
 graph TD;
@@ -36,3 +42,4 @@ graph TD;
 ```
 
 
+</ul>
