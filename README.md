@@ -50,3 +50,10 @@ graph TD;
 ```
 
 </ul>
+
+# github copilot
+
+[setting up github actions semantic release](https://github.com/copilot/share/403a4116-0ac0-8421-b001-180224de4185)
+
+
+
