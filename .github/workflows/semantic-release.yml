@@ -3,9 +3,11 @@ name: Semantic Release
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-      - main
+# disable push since it will always fail when b/c ToC 
+# auto-update will push a new commit and the triggering commit will be stale    
+#  push:
+#    branches:
+#      - main
 
   workflow_run:
     workflows: ["github ToC"]
