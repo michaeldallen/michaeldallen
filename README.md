@@ -4,7 +4,6 @@
 # Table of Contents
 
 <!--ts-->
-* [michaeldallen](#michaeldallen)
 * [Table of Contents](#table-of-contents)
 * [Github Actions](#github-actions)
    * [github-markdown-toc](#github-markdown-toc)
