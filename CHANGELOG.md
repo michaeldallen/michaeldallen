@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/michaeldallen/michaeldallen/compare/v1.2.3...v1.2.4) (2025-05-21)
+
+
+### Bug Fixes
+
+* another test ([e21c9d2](https://github.com/michaeldallen/michaeldallen/commit/e21c9d28e18904b2c7b61b7f0faa8a9ca3149ee1))
+
 ## [1.2.3](https://github.com/michaeldallen/michaeldallen/compare/v1.2.2...v1.2.3) (2025-05-21)
 
 
