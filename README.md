@@ -12,11 +12,10 @@
     <td style="border:none;">1</td>
   </tr>
 <!--ts-->
-
+* [michaeldallen](#michaeldallen)
    * [actions](#actions)
       * [github-markdown-toc](#github-markdown-toc)
    * [mermaid](#mermaid)
-
 <!--te-->
   </tr>
 </table>
