@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/michaeldallen/michaeldallen/compare/v1.2.0...v1.2.1) (2025-05-21)
+
+
+### Bug Fixes
+
+* c/p typo ([aa6e69e](https://github.com/michaeldallen/michaeldallen/commit/aa6e69eed8a70e8bdf3164c79cccd5bdeb976c2e))
+* semantic release after toc ([220688c](https://github.com/michaeldallen/michaeldallen/commit/220688c30805c6bf500389413eabfd302971bbd9))
+
 # [1.2.0](https://github.com/michaeldallen/michaeldallen/compare/v1.1.1...v1.2.0) (2025-05-21)
 
 
