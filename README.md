@@ -17,7 +17,7 @@
 * [github copilot](#github-copilot)
 <!--te-->
 
-## Github Actions
+# Github Actions
 
 <ul>
 
@@ -54,7 +54,14 @@ graph TD;
 
 # github copilot
 
+
+## setting up semantic release
+
+<ul>
+
 [setting up github actions semantic release](https://github.com/copilot/share/403a4116-0ac0-8421-b001-180224de4185)
+
+</ul>
 
 
 
