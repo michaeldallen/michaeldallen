@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/michaeldallen/michaeldallen/compare/v1.2.2...v1.2.3) (2025-05-21)
+
+
+### Bug Fixes
+
+* don't run on push since will run after toc update ([e897b24](https://github.com/michaeldallen/michaeldallen/commit/e897b24fb7339e2aa2d7b72705d1f0b3a40cec27))
+* run only once ([6be5324](https://github.com/michaeldallen/michaeldallen/commit/6be5324f536aa32e043f2f101e987d57aa6279d0))
+
 ## [1.2.2](https://github.com/michaeldallen/michaeldallen/compare/v1.2.1...v1.2.2) (2025-05-21)
 
 
