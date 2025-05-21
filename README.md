@@ -1,8 +1,5 @@
 # `michaeldallen`[![Github TOC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
 
-| Right  |
-| -----: |
-| Three  |
 
 # Table of Contents
 
