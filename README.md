@@ -6,7 +6,6 @@
 <!--ts-->
 * [Table of Contents](#table-of-contents)
 * [Github Actions](#github-actions)
-   * [github-markdown-toc](#github-markdown-toc)
 * [Mermaid](#mermaid)
 * [github copilot](#github-copilot)
    * [setting up semantic release](#setting-up-semantic-release)
