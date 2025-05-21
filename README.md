@@ -1,6 +1,4 @@
-# `michaeldallen`
-
-<br><ul> [![GitHub Actions Demo](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml)<br>[![Github TOC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)<br>[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)</ul>
+# `michaeldallen`[![Github TOC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
 
 | Right  |
 | -----: |
