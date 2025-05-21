@@ -14,6 +14,7 @@
    * [Github Actions](#github-actions)
    * [github-markdown-toc](#github-markdown-toc)
 * [Mermaid](#mermaid)
+* [github copilot](#github-copilot)
 <!--te-->
 
 ## Github Actions
