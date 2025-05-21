@@ -3,12 +3,12 @@ name: Semantic Release
 on:
   workflow_dispatch:
 
-# disable push since it will always fail when b/c ToC 
-# auto-update will push a new commit and the triggering commit will be stale    
-#  push:
-#    branches:
-#      - main
-
+  # don't run for README.md since the ToC update will trigger
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
   workflow_run:
     workflows: ["github ToC"]
     types:
