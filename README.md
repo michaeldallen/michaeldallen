@@ -16,7 +16,7 @@
 
 <ul>
 
-## `github-markdown-toc`
+## `github-markdown-toc` [![github ToC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)
 
 I am maintaining the table of contents for this page with [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc.git)
 
@@ -32,6 +32,12 @@ Thank you:
 </ul>
 
 </ul>
+
+## `semantic-release` [![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
+
+unromantic & unsentimental
+
+[semantic release](https://github.com/semantic-release/semantic-release)
 
 # Mermaid
 
