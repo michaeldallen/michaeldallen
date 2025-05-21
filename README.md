@@ -1,13 +1,6 @@
 <!--ts-->
 <!--te-->
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
 
 <!--
 **michaeldallen/michaeldallen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -41,4 +34,15 @@ h3h3h3h3h3
 34hjhh3h3h3h3h3h3h
 ### H3c
 h3hh3h3h33h
+
+# mermaid
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 
