@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/michaeldallen/michaeldallen/compare/v1.2.1...v1.2.2) (2025-05-21)
+
+
+### Bug Fixes
+
+* I meant fix, not patch ([26e8816](https://github.com/michaeldallen/michaeldallen/commit/26e8816cf046f634cf5cf45cf4abe450cbb0ff0f))
+
 ## [1.2.1](https://github.com/michaeldallen/michaeldallen/compare/v1.2.0...v1.2.1) (2025-05-21)
 
 
