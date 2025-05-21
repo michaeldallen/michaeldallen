@@ -1,8 +1,4 @@
-# `michaeldallen`
-
-[![GitHub Actions Demo](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml)<br>
-[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)<br>
-[![Github TOC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)<br>
+# `michaeldallen` [![GitHub Actions Demo](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-actions-demo.yml)[![Github TOC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
 
 <!--ts-->
 * [michaeldallen](#michaeldallen)
