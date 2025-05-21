@@ -6,7 +6,7 @@
 | -----: |
 | Three  |
 
-## Table of Contents
+# Table of Contents
 
 <!--ts-->
 * [michaeldallen](#michaeldallen)
@@ -20,7 +20,7 @@
 
 <ul>
 
-### `github-markdown-toc`
+## `github-markdown-toc`
 
 I am maintaining the table of contents for this page with [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc.git)
 
@@ -37,7 +37,7 @@ Thank you:
 
 </ul>
 
-## Mermaid
+# Mermaid
 
 <ul>
 
