@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install semantic-release
-        run: npm install --no-save semantic-release @semantic-release/git @semantic-release/changelog
+        run: npm install --no-save semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer
 
       - name: Run semantic-release
         env:
