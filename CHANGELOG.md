@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/michaeldallen/michaeldallen/compare/v2.0.0...v2.1.0) (2025-05-21)
+
+
+### Features
+
+* add semantic release section ([c15f75d](https://github.com/michaeldallen/michaeldallen/commit/c15f75d3af07ddc95ed5f1e8162940268d2cfc51))
+
 # [2.0.0](https://github.com/michaeldallen/michaeldallen/compare/v1.2.5...v2.0.0) (2025-05-21)
 
 
