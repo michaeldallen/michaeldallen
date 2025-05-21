@@ -10,10 +10,10 @@
 
 <!--ts-->
 * [michaeldallen](#michaeldallen)
-   * [Table of Contents](#table-of-contents)
+* [Table of Contents](#table-of-contents)
    * [Github Actions](#github-actions)
-      * [github-markdown-toc](#github-markdown-toc)
-   * [Mermaid](#mermaid)
+   * [github-markdown-toc](#github-markdown-toc)
+* [Mermaid](#mermaid)
 <!--te-->
 
 ## Github Actions
