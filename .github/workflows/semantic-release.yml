@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
   # don't run for README.md since the ToC update will trigger
+  # now a more different test
   push:
     branches:
       - main
