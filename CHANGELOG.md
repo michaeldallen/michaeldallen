@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/michaeldallen/michaeldallen/compare/v1.1.1...v1.2.0) (2025-05-21)
+
+
+### Bug Fixes
+
+* remove buggy section ([9fd3c6e](https://github.com/michaeldallen/michaeldallen/commit/9fd3c6ebb508dbfa3ebc8c00905a10b1f4703564))
+* remove demo table ([a419fef](https://github.com/michaeldallen/michaeldallen/commit/a419fefd0c7a517ef498ec6d8de23e464a1d95e5))
+
+
+### Features
+
+* add semantic release notes ([af78b2f](https://github.com/michaeldallen/michaeldallen/commit/af78b2f3215adddf3991ca62e50304a2b9a83dbb))
+* semantic release manual trigger ([159026e](https://github.com/michaeldallen/michaeldallen/commit/159026e1b3d503621b215649b6dc6053661fe25d))
+
 ## [1.1.1](https://github.com/michaeldallen/michaeldallen/compare/v1.1.0...v1.1.1) (2025-05-21)
 
 
