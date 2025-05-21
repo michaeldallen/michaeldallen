@@ -49,7 +49,6 @@ graph TD;
 
 # github copilot
 
-
 ## setting up semantic release
 
 <ul>
