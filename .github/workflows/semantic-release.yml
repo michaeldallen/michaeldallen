@@ -29,9 +29,9 @@ jobs:
       - name: Install semantic-release
         run: | 
           npm install --no-save semantic-release 
-          npm install --save-dev @semantic-release/commit-analyzer
-          npm install --save-dev @semantic-release/changelog
-          npm install --save-dev @semantic-release/git  
+          npm install --no-save @semantic-release/commit-analyzer
+          npm install --no-save @semantic-release/changelog
+          npm install --no-save @semantic-release/git  
 
 
       - name: Run semantic-release
