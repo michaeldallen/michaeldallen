@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/michaeldallen/michaeldallen/compare/v1.2.5...v2.0.0) (2025-05-21)
+
+
+### Bug Fixes
+
+* add commit-analyser ([4006553](https://github.com/michaeldallen/michaeldallen/commit/4006553ff8be32cddbe3f7fb573bf34777084745))
+* again, again ([02312a6](https://github.com/michaeldallen/michaeldallen/commit/02312a6641b3d7ab4269509fc62204392cf1c5d8))
+* commit-analyser ([4934490](https://github.com/michaeldallen/michaeldallen/commit/4934490005770c9d134fa0941b96eb0a8996c257))
+* grrr ([e4b36d8](https://github.com/michaeldallen/michaeldallen/commit/e4b36d8b9187519f0dfffd378820581b696c3a05))
+* it again, tony ([9baf2cc](https://github.com/michaeldallen/michaeldallen/commit/9baf2cc2c0d69e6612693aeebafc15a00423fc55))
+* put it back ([d127da2](https://github.com/michaeldallen/michaeldallen/commit/d127da29110b107642e5ad9a4a319387a2d6dc4e))
+* sigh ([576082e](https://github.com/michaeldallen/michaeldallen/commit/576082eb49a2397583d5ed2a315714f0db0f5a81))
+
+
+### BREAKING CHANGES
+
+* test
+
 ## [1.2.5](https://github.com/michaeldallen/michaeldallen/compare/v1.2.4...v1.2.5) (2025-05-21)
 
 
