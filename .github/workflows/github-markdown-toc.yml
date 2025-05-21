@@ -1,5 +1,5 @@
 name: Github TOC
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} 🚀
 on:
   workflow_dispatch:
   push:
