@@ -10,6 +10,7 @@
 * [Mermaid](#mermaid)
 * [github copilot](#github-copilot)
    * [setting up semantic release](#setting-up-semantic-release)
+* [test TOC header](#test-toc-header)
 <!--te-->
 
 # Github Actions
