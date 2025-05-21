@@ -1,5 +1,4 @@
 name: github ToC
-run-name: ${{ github.actor }} 🚀
 on:
   workflow_dispatch:
   push:
