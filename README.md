@@ -1,9 +1,10 @@
 # `michaeldallen`
 
 <!--ts-->
-* [actions](#actions)
-   * [github-markdown-toc](#github-markdown-toc)
-* [mermaid](#mermaid)
+* [michaeldallen](#michaeldallen)
+   * [actions](#actions)
+      * [github-markdown-toc](#github-markdown-toc)
+   * [mermaid](#mermaid)
 <!--te-->
 
 
