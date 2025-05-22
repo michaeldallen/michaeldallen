@@ -1,5 +1,8 @@
 # `michaeldallen` 
 
+[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
+
+
 # Table of Contents
 
 <!--ts-->
@@ -32,7 +35,7 @@ Thank you:
 </ul>
 
 
-## `semantic-release` [![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
+## `semantic-release` 
 
 <ul>
 
