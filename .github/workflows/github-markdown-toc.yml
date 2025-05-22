@@ -1,4 +1,4 @@
-name: github ToC
+name: github-markdown-toc
 on:
   workflow_dispatch:
   push:

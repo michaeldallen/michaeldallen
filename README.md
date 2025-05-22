@@ -2,9 +2,9 @@
 
 <ul>
 
-[![Semantic Release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
+[![semantic-release](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/semantic-release.yml)
 
- [![github ToC](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)
+ [![github-markdown-toc](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)
 
 </ul>
 
