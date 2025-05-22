@@ -9,6 +9,7 @@
 * [michaeldallen](#michaeldallen)
 * [Table of Contents](#table-of-contents)
 * [Github Actions](#github-actions)
+   * [semantic-release](#semantic-release)
 * [Mermaid](#mermaid)
 * [github copilot](#github-copilot)
    * [setting up semantic release](#setting-up-semantic-release)
