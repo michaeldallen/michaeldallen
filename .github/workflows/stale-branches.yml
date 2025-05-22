@@ -1,4 +1,4 @@
-name: Stale Branches
+name: stale-branches
 
 on:
   workflow_dispatch:
