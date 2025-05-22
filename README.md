@@ -42,13 +42,37 @@ Thank you:
 </ul>
 
 
-## `semantic-release` 
+## `semantic-release`
 
 <ul>
 
 unromantic & unsentimental
 
 [semantic release](https://github.com/semantic-release/semantic-release)
+
+</ul>
+
+
+
+## `stale-branches`
+
+<ul>
+
+Finds and deletes stale branches
+
+[stale-branches](https://github.com/marketplace/actions/stale-branches)
+
+</ul>
+
+
+
+## `stale-repos`
+
+<ul>
+
+identify and report repositories with no activity for configurable amount of tim
+
+[stale-repos](https://github.com/marketplace/actions/stale-repos)
 
 </ul>
 
