@@ -17,3 +17,7 @@ jobs:
     steps:
       - name: Stale Branches
         uses: crs-k/stale-branches@v5.0.0
+        with:
+          days-before-stale: 120
+          dry-run: true
+          
