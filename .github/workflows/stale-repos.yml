@@ -44,4 +44,4 @@ jobs:
           title: Stale-repository-report
           content-filepath: ./stale_repos.md
           assignees: michaeldallen
-          token: ${{ secrets.stale }}
+          token: ${{ secrets.STALE_REPO_PAT }}
