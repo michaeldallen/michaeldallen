@@ -33,7 +33,7 @@ jobs:
       - name: Run stale_repos tool
         uses: github/stale-repos@v2
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STALE_REPO_PAT }}
           ORGANIZATION: ${{ secrets.ORGANIZATION }}
           EXEMPT_TOPICS: "keep,template"
           INACTIVE_DAYS: 365
