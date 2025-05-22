@@ -14,18 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
   
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      actions: write
-      checks: write
-      deployments: write
-      discussions: write
-      packages: write
-      repository-projects: write
-      security-events: write
-      statuses: write
+
     
     steps:
       - uses: actions/checkout@v4
@@ -46,7 +35,7 @@ jobs:
           ISSUE_NUMBER=$(gh search issues "Stale-repository-report" --match title --json number --jq ".[0].number")
           echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_ENV"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STALE_REPO_PAT }}
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v5
