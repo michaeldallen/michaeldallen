@@ -15,7 +15,11 @@ jobs:
 
     permissions:
       contents: read
+      actions: write
       issues: write
+      pull-requests: write
+
+
 
     steps:
       - uses: actions/checkout@v4
