@@ -1,4 +1,4 @@
-name: Stale Repos
+name: stale-repos
 
 on:
   workflow_dispatch:
