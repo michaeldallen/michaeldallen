@@ -16,6 +16,8 @@
 * [Github Actions](#github-actions)
    * [github-markdown-toc](#github-markdown-toc)
    * [semantic-release](#semantic-release)
+   * [stale-branches](#stale-branches)
+   * [stale-repos](#stale-repos)
 * [Mermaid](#mermaid)
 * [github copilot](#github-copilot)
    * [setting up semantic release](#setting-up-semantic-release)
