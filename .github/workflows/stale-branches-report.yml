@@ -25,6 +25,8 @@ jobs:
         run: sudo apt-get install gh -y
 
       - name: Generate Stale Branches Report
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           echo "
           #!/usr/bin/env python3
