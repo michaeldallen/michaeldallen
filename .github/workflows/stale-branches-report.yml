@@ -94,8 +94,7 @@ jobs:
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v5
         with:
-          path: stale-branches-report.md
-          issue-number: ${{ env.issue_number }}
+          #issue-number: ${{ env.issue_number }}
           title: stale-branch-report
           content-filepath: stale-branches-report.md
           assignees: michaeldallen
