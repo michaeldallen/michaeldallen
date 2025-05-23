@@ -86,6 +86,7 @@ jobs:
       - name: Check for the stale report issue
         run: |
           ISSUE_NUMBER=$(gh search issues "stale-branches-report" --match title --json number --jq ".[0].number")
+          echo "issue_number=$ISSUE_NUMBER" 
           echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_ENV"
         env:
           GH_TOKEN: ${{ secrets.STALE_REPO_PAT }}
@@ -93,7 +94,7 @@ jobs:
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v5
         with:
-          #issue-number: ${{ env.issue_number }}
+          issue-number: ${{ env.issue_number }}
           title: stale-branch-report
           content-filepath: stale-branches-report.md
           assignees: michaeldallen
