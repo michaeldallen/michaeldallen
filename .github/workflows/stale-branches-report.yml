@@ -26,48 +26,51 @@ jobs:
 
       - name: Generate Stale Branches Report
         run: |
+          echo "
           #!/usr/bin/env python3
           import os, sys, subprocess, json
           from datetime import datetime, timedelta
-
+      
           token = os.environ['GH_TOKEN']
           stale_days = int(os.environ.get('STALE_DAYS', 90))
           cutoff = datetime.utcnow() - timedelta(days=stale_days)
           user = subprocess.check_output(
-            ["gh", "api", "user", "--jq", ".login"],
-            env={**os.environ, "GH_TOKEN": token}
+              ['gh', 'api', 'user', '--jq', '.login'],
+              env={**os.environ, 'GH_TOKEN': token}
           ).decode().strip()
           repos = json.loads(subprocess.check_output(
-            ["gh", "repo", "list", user, "--json", "name,sshUrl", "--limit", "500"],
-            env={**os.environ, "GH_TOKEN": token}
+              ['gh', 'repo', 'list', user, '--json', 'name,sshUrl', '--limit', '500'],
+              env={**os.environ, 'GH_TOKEN': token}
           ).decode())
-
-          report_lines = [f"# Stale Branches Report (not updated in {stale_days}+ days)\n"]
+      
+          report_lines = [f'# Stale Branches Report (not updated in {stale_days}+ days)\\n']
           for repo in repos:
-              name = repo["name"]
+              name = repo['name']
               branches = json.loads(subprocess.check_output(
-                  ["gh", "api", f"/repos/{user}/{name}/branches", "--paginate"],
-                  env={**os.environ, "GH_TOKEN": token}
+                  ['gh', 'api', f'/repos/{user}/{name}/branches', '--paginate'],
+                  env={**os.environ, 'GH_TOKEN': token}
               ).decode())
               stale = []
               for branch in branches:
-                  branch_name = branch["name"]
-                  commit_url = branch["commit"]["url"]
+                  branch_name = branch['name']
+                  commit_url = branch['commit']['url']
                   commit = json.loads(subprocess.check_output(
-                      ["gh", "api", commit_url],
-                      env={**os.environ, "GH_TOKEN": token}
+                      ['gh', 'api', commit_url],
+                      env={**os.environ, 'GH_TOKEN': token}
                   ).decode())
-                  date = commit["commit"]["committer"]["date"]
-                  dt = datetime.strptime(date, "%Y-%m-%dT%H:%M:%SZ")
-                  if dt < cutoff and branch_name != "main" and branch_name != "master":
+                  date = commit['commit']['committer']['date']
+                  dt = datetime.strptime(date, '%Y-%m-%dT%H:%M:%SZ')
+                  if dt < cutoff and branch_name != 'main' and branch_name != 'master':
                       stale.append((branch_name, date))
               if stale:
-                  report_lines.append(f"## {name}")
+                  report_lines.append(f'## {name}')
                   for b, d in stale:
-                      report_lines.append(f"- `{b}` (Last update: {d})")
-                  report_lines.append("")
-          with open("stale-branches-report.md", "w") as f:
-              f.write("\n".join(report_lines))
+                      report_lines.append(f'- `{b}` (Last update: {d})')
+                  report_lines.append('')
+          with open('stale-branches-report.md', 'w') as f:
+              f.write('\\n'.join(report_lines))
+          " > stale_report_script.py
+          python3 stale_report_script.py
 
       - name: Upload stale branch report
         uses: actions/upload-artifact@v4
