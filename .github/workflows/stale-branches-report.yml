@@ -95,7 +95,7 @@ jobs:
         uses: peter-evans/create-issue-from-file@v5
         with:
           issue-number: ${{ env.issue_number }}
-          title: stale-branch-report
+          title: stale-branches-report
           content-filepath: stale-branches-report.md
           assignees: michaeldallen
           token: ${{ secrets.STALE_REPO_PAT }}
