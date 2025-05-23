@@ -71,7 +71,7 @@ jobs:
               if stale:
                   report_lines.append(f'## {name}')
                   for b, d in stale:
-                      report_lines.append(f'- `{b}` (Last update: {d})')
+                      report_lines.append(f'- {b} (Last update: {d})')
                   report_lines.append('')
           with open('stale-branches-report.md', 'w') as f:
               f.write('\\n'.join(report_lines))
