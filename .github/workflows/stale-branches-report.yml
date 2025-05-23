@@ -31,7 +31,6 @@ jobs:
           STALE_DAYS: ${{ env.STALE_DAYS }}
         run: |
           set -e
-          set -x
           set -u
 
           TMP_REPORT="stale-branches-report.md"
