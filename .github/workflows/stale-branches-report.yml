@@ -44,11 +44,11 @@ jobs:
           USER=$(gh api user --jq .login)
 
           gh repo list "$USER" --json name --limit 500 | jq -r '.[].name' | while read REPO; do
-            echo "*** found repo: ${repo}"
+            echo "*** found repo: ${REPO}"
           done
           
           gh repo list "$USER" --json name --limit 500 | jq -r '.[].name' | while read REPO; do
-            echo "*** checking repo: ${repo}"
+            echo "*** checking repo: ${REPO}"
             
             STALE_FOUND=0
             BRANCHES=$(gh api "/repos/$USER/$REPO/branches?per_page=100")
