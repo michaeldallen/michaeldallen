@@ -82,3 +82,12 @@ jobs:
         with:
           name: stale-branches-report
           path: stale-branches-report.md
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          issue-number: ${{ env.issue_number }}
+          title: stale-branch-report
+          content-filepath: "$TMP_REPORT"
+          assignees: michaeldallen
+          token: ${{ secrets.STALE_REPO_PAT }}
