@@ -60,6 +60,10 @@ jobs:
                 continue
               fi
               COMMIT_DATE=$(echo "$BRANCHES" | jq -r ".[$i].commit.commit.committer.date")
+              if [ "$COMMIT_DATE" = "null" ] || [ -z "$COMMIT_DATE" ]; then
+                echo "Skipping branch $BRANCH_NAME due to missing commit date."
+                continue
+              fi
               COMMIT_SECS=$(date -u -d "$COMMIT_DATE" +%s)
               if [ $COMMIT_SECS -lt $CUTOFF_SECS ]; then
                 BRANCH_LINES="$BRANCH_LINES- \`$BRANCH_NAME\` (Last update: $COMMIT_DATE)\n"
