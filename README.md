@@ -11,7 +11,7 @@
 # Table of Contents
 
 <!--ts-->
-* [michaeldallen](#michaeldallen)
+* [<a href="https://github.com/michaeldallen/michaeldallen">michaeldallen</a>](https://github.com/michaeldallen/michaeldallen)
 * [Table of Contents](#table-of-contents)
 * [Github Actions](#github-actions)
    * [github-markdown-toc](#github-markdown-toc)
