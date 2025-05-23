@@ -56,9 +56,9 @@ jobs:
             BRANCH_LINES=""
             for i in $(seq 0 $(($BRANCHES_COUNT - 1))); do
               BRANCH_NAME=$(echo "$BRANCHES" | jq -r ".[$i].name")
-#              if [ "$BRANCH_NAME" = "main" ] || [ "$BRANCH_NAME" = "master" ]; then
-#                continue
-#              fi
+              #              if [ "$BRANCH_NAME" = "main" ] || [ "$BRANCH_NAME" = "master" ]; then
+              #                continue
+              #              fi
               COMMIT_DATE=$(echo "$BRANCHES" | jq -r ".[$i].commit.commit.committer.date")
               if [ "$COMMIT_DATE" = "null" ] || [ -z "$COMMIT_DATE" ]; then
                 echo "Skipping branch $BRANCH_NAME due to missing commit date."
