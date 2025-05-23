@@ -1,5 +1,4 @@
 name: github-markdown-toc
-run-name: gh-md-toc ${{ github.actor }} 🚀
 
 on:
   workflow_dispatch:
