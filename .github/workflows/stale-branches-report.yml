@@ -13,7 +13,7 @@ jobs:
   stale-branches-report:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       STALE_DAYS: 90  # Change as needed
 
     steps:
@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate Stale Branches Report (shell)
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           STALE_DAYS: ${{ env.STALE_DAYS }}
         run: |
           set -e
