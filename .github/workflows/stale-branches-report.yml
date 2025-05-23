@@ -2,13 +2,13 @@ name: Stale Branches Report
 
 on:
   schedule:
-    - cron: "0 8 * * 1"  # Every Monday at 08:00 UTC
+    - cron: "0 8 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: read
   issues: read
-  
+
 jobs:
   stale-branches-report:
     runs-on: ubuntu-latest
@@ -20,63 +20,50 @@ jobs:
       - name: Checkout (empty, just for context)
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install GitHub CLI
-        run: sudo apt-get install gh -y
-
-      - name: Generate Stale Branches Report
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install jq and GitHub CLI
         run: |
-          echo "
-          #!/usr/bin/env python3
-          import os, sys, subprocess, json
-          from datetime import datetime, timedelta
-      
-          token = os.environ['GH_TOKEN']
-          stale_days = int(os.environ.get('STALE_DAYS', 90))
-          cutoff = datetime.utcnow() - timedelta(days=stale_days)
-          user = subprocess.check_output(
-              ['gh', 'api', 'user', '--jq', '.login'],
-              env={**os.environ, 'GH_TOKEN': token}
-          ).decode().strip()
-          repos = json.loads(subprocess.check_output(
-              ['gh', 'repo', 'list', user, '--json', 'name,sshUrl', '--limit', '500'],
-              env={**os.environ, 'GH_TOKEN': token}
-          ).decode())
-      
-          report_lines = [f'# Stale Branches Report (not updated in {stale_days}+ days)\\n']
-          for repo in repos:
-              name = repo['name']
-              branches = json.loads(subprocess.check_output(
-                  ['gh', 'api', f'/repos/{user}/{name}/branches', '--paginate'],
-                  env={**os.environ, 'GH_TOKEN': token}
-              ).decode())
-              stale = []
-              for branch in branches:
-                  branch_name = branch['name']
-                  commit_url = branch['commit']['url']
-                  commit = json.loads(subprocess.check_output(
-                      ['gh', 'api', commit_url],
-                      env={**os.environ, 'GH_TOKEN': token}
-                  ).decode())
-                  date = commit['commit']['committer']['date']
-                  dt = datetime.strptime(date, '%Y-%m-%dT%H:%M:%SZ')
-                  if dt < cutoff and branch_name != 'main' and branch_name != 'master':
-                      stale.append((branch_name, date))
-              if stale:
-                  report_lines.append(f'## {name}')
-                  for b, d in stale:
-                      report_lines.append(f'- {b} (Last update: {d})')
-                  report_lines.append('')
-          with open('stale-branches-report.md', 'w') as f:
-              f.write('\\n'.join(report_lines))
-          " > stale_report_script.py
-          python3 stale_report_script.py
+          sudo apt-get update
+          sudo apt-get install -y jq gh
+
+      - name: Generate Stale Branches Report (shell)
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          STALE_DAYS: ${{ env.STALE_DAYS }}
+        run: |
+          set -e
+
+          TMP_REPORT="stale-branches-report.md"
+          echo "# Stale Branches Report (not updated in ${STALE_DAYS}+ days)" > "$TMP_REPORT"
+          echo "" >> "$TMP_REPORT"
+
+          NOW_SECS=$(date -u +%s)
+          CUTOFF_SECS=$(($NOW_SECS - 86400 * ${STALE_DAYS}))
+
+          USER=$(gh api user --jq .login)
+
+          gh repo list "$USER" --json name --limit 500 | jq -r '.[].name' | while read REPO; do
+            STALE_FOUND=0
+            BRANCHES=$(gh api "/repos/$USER/$REPO/branches?per_page=100")
+            BRANCHES_COUNT=$(echo "$BRANCHES" | jq length)
+            BRANCH_LINES=""
+            for i in $(seq 0 $(($BRANCHES_COUNT - 1))); do
+              BRANCH_NAME=$(echo "$BRANCHES" | jq -r ".[$i].name")
+              if [ "$BRANCH_NAME" = "main" ] || [ "$BRANCH_NAME" = "master" ]; then
+                continue
+              fi
+              COMMIT_DATE=$(echo "$BRANCHES" | jq -r ".[$i].commit.commit.committer.date")
+              COMMIT_SECS=$(date -u -d "$COMMIT_DATE" +%s)
+              if [ $COMMIT_SECS -lt $CUTOFF_SECS ]; then
+                BRANCH_LINES="$BRANCH_LINES- \`$BRANCH_NAME\` (Last update: $COMMIT_DATE)\n"
+                STALE_FOUND=1
+              fi
+            done
+            if [ $STALE_FOUND -eq 1 ]; then
+              echo "## $REPO" >> "$TMP_REPORT"
+              echo -e "$BRANCH_LINES" >> "$TMP_REPORT"
+              echo "" >> "$TMP_REPORT"
+            fi
+          done
 
       - name: Upload stale branch report
         uses: actions/upload-artifact@v4
