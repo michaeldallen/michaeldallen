@@ -6,6 +6,9 @@
 
  [![github-markdown-toc](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml/badge.svg)](https://github.com/michaeldallen/michaeldallen/actions/workflows/github-markdown-toc.yml)
 
+
+## [Calc 2 Summer 2025](https://github.com/users/michaeldallen/projects/4)
+
 </ul>
 
 # Table of Contents
