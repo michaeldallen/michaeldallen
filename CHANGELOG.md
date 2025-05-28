@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/michaeldallen/michaeldallen/compare/v2.1.3...v2.1.4) (2025-05-28)
+
+
+### Bug Fixes
+
+* codespaces ([9867809](https://github.com/michaeldallen/michaeldallen/commit/98678096798ee50bff800a8c89080653a4d10aca))
+
 ## [2.1.3](https://github.com/michaeldallen/michaeldallen/compare/v2.1.2...v2.1.3) (2025-05-28)
 
 
