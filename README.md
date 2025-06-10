@@ -69,9 +69,6 @@ Thank you:
 [@Michael Heap](https://michaelheap.com/) for the [nice writeup on `git-auto-commit`](https://michaelheap.com/git-auto-commit/)
 </ul>
 
-### test toc for v6
-
-checking for breakage using https://github.com/stefanzweifel/git-auto-commit-action/releases/tag/v6.0.0
 
 
 ## `semantic-release`
