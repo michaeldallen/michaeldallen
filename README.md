@@ -22,6 +22,7 @@
    * [<a href="https://github.com/codespaces">https://github.com/organizations/allenhub-net/settings/codespaces</a>](https://github.com/codespaces)
 * [Github Actions](#github-actions)
    * [github-markdown-toc](#github-markdown-toc)
+      * [test toc for v6](#test-toc-for-v6)
    * [semantic-release](#semantic-release)
    * [stale-branches](#stale-branches)
    * [stale-repos](#stale-repos)
