@@ -92,7 +92,7 @@ jobs:
           GH_TOKEN: ${{ secrets.STALE_REPO_PAT }}
           
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           issue-number: ${{ env.issue_number }}
           title: stale-branches-report
